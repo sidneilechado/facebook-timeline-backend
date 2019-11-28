@@ -25,12 +25,4 @@ module.exports = {
 
     return res.status(200).json(user);
   },
-
-  async destroy(req, res) {
-    if (await User.findByIdAndDelete(req.params.id)) {
-      return res.json({ Status: 'User successfuly deleted' });
-    } else {
-      return res.status(400).json({ Status: 'Bad request' });
-    }
-  },
 };

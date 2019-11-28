@@ -16,7 +16,6 @@ routes.get('/posts', PostController.index);
 routes.post('/posts', PostController.store);
 routes.post('/posts/:id/like', LikeController.store);
 
-routes.delete('/user/:id', UserController.destroy);
 routes.post('/follow/:id', FollowController.store);
 
 module.exports = routes;

@@ -22,5 +22,7 @@ module.exports = {
     'func-names': 'off',
     'no-undef': 'off',
     'spaced-comment': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
   },
 };
