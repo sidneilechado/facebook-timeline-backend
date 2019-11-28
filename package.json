@@ -11,7 +11,7 @@
     "client-install": "npm install --prefix client",
     "server": "nodemon src/server.js",
     "test": "jest",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
     "@babel/core": "^7.7.2",
@@ -50,6 +50,7 @@
   "devDependencies": {
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^24.0.23",
+    "coveralls": "^3.0.9",
     "jest": "^24.9.0"
   }
 }
