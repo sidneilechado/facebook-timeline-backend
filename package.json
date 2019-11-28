@@ -10,7 +10,7 @@
     "start": "babel-node src/server.js",
     "client-install": "npm install --prefix client",
     "server": "nodemon src/server.js",
-    "test": "jest",
+    "test": "jest --forceExit",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
