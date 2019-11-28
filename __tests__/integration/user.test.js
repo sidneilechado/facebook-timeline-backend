@@ -20,18 +20,18 @@ describe('Verify users', () => {
     expect(res.body).toBe('5dddafd2d98a236306656d6c');
   });
 
-  // routes.post('/user', UserController.store);
-  // it('It should create a single user', async () => {
-  //   const res = await request(app)
-  //     .post('/user')
-  //     .send({
-  //       name: 'testeTDD',
-  //       email: 'testeTDD',
-  //       password: 'testeTDD',
-  //       tag: 'testeTDD',
-  //     });
+  //routes.post('/user', UserController.store);
+  it('It should create a single user', async () => {
+    const res = await request(app)
+      .post('/user')
+      .send({
+        name: 'testeTDD',
+        email: 'testeTDD',
+        password: 'testeTDD',
+        tag: 'testeTDD',
+      });
 
-  //   expect(res.statusCode).toEqual(200);
-  //   expect(res.body).toHaveProperty('_id');
-  // });
+    expect(res.statusCode).toEqual(200);
+    expect(res.body).toHaveProperty('_id');
+  });
 });
