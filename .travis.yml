@@ -6,7 +6,7 @@ node_js:
   - 12.3
 
 script:
-  - npm test:coveralls
+  - npm run test:coveralls
 
 notification:
   email: false
