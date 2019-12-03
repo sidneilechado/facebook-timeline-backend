@@ -1,3 +1,5 @@
+import auth from './middlewares/auth';
+
 const express = require('express');
 const PostController = require('./controllers/PostController');
 const LikeController = require('./controllers/LikeController');
@@ -11,6 +13,8 @@ routes.get('/user', UserController.index);
 routes.post('/user/getUser', UserController.getOne);
 routes.post('/user', UserController.store);
 routes.post('/login', LoginController.store);
+
+routes.use(auth);
 
 routes.get('/posts', PostController.index);
 routes.post('/posts', PostController.store);
