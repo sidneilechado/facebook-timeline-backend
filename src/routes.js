@@ -11,6 +11,7 @@ import auth from './middlewares/auth';
 
 routes.get('/user', UserController.index);
 routes.post('/user/getUser', UserController.getOne);
+routes.post('/user/getUserId', UserController.getOneId);
 routes.post('/user', UserController.store);
 routes.post('/login', LoginController.store);
 
